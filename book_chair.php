@@ -1,3 +1,14 @@
-<?php
-echo "预约讲座页面";
-?>
+
+
+
+
+	<div class="chair-wrapper">
+sdsdsdsd
+
+	</div>
+
+	<div class="chair-wrapper">
+
+
+	</div>
+	
