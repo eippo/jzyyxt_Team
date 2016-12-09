@@ -18,7 +18,7 @@ $sqlstr = "select * from yq_chair where chBookTime >  '$nowTime'  order by id de
 $result = mysql_query($sqlstr) or die("数据库请求失败！");
 while ($rows = mysql_fetch_array($result)) {
 
-	echo "<div class='chair-wrapper'>".$rows['id']."    ".$rows['chName']."</br>"." <input class='book-btn' type='button' id='book_chair_btn' value='预约此讲座' onclick='book()'/>"."</div>";
+	echo "<div class='chair-wrapper'>".$rows['id']."    ".$rows['chName']."</br>"." <input class='book-btn' type='button' id='".$rows['id']."' value='预约此讲座' onclick='book(this.id)'/>"."</div>";
 	
 }
 ?>

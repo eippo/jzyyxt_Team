@@ -77,10 +77,15 @@ $(function(){
 	
 });
 
-function book() {
-	$("#heihei").innerHTML="Hello JavaScript!";
-	<?php echo("123");?>
-		
+function book(id) {
+	x=document.getElementById("heihei");  // 找到元素
+	x.innerHTML=id;    // 改变内容
+	var v = $('#'+id).val();
+	if(v=="预约此讲座") {
+		$('#'+id).val("取消预约");
+	}else {
+		$('#'+id).val("预约此讲座");
+	}
 }
 </script>
 </html>
