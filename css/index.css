@@ -275,12 +275,14 @@ a:-webkit-any-link {
 }
 
 .main-home {
-	height: 1000px;
+	min-height: 1000px;
 	background: #fff;
     margin-top: 50px;
     font-size:25;
     text-align: center;
-    padding-top:10px
+    padding:10px 10px;
+    
+    
 }
 
 /*----------------------------------book_chair.php------------------------------------------*/
@@ -288,36 +290,38 @@ a:-webkit-any-link {
 .chair-wrapper {
 	height: 400px;
 	background: linear-gradient(to bottom, rgba(204,204,204,1) 0%,rgba(255,255,255,1) 99%);
-	margin:0 10px;
+	margin:0 atuo;
 	border-radius:5px;
+	position: relative;
 	
 }
 
 
 .chair-wrapper .book-btn {
-	clear: both;
+	
 	width: 100px;
-	background-color: rgba(1,1,1,0);
-	color: #FFF;
+	background-color: #5ba2db;
+	color: black;
 	height: 46px;
 	padding: 6px 6px;
 	font-size: 16px;
-	text-align:center;
 	line-height: 26px;
 	font-weight: normal;
 	cursor: pointer;
 	border: solid;
-	margin: 50px 0px 20px 0px;
+	margin: atuo;
 	border-radius: 5px;
-   
+    position: absolute;
+    bottom: 10px;
+    left: 45%;
 }
 
 
 .chair-wrapper .book-btn:hover {
-	color: white;
-	background: #004ba0;
+	color: black;
+	background: #fff;
 	height: 46px;
-	padding: 6px 12px;
-	font-size: 16px;
+	padding: 6px 6px;
+	font-size: 17px;
 	line-height: 26px;
 }

@@ -74,6 +74,13 @@ $(function(){
 	$("#exit").click(function(){
 		$("#right-content").load("search_chair.php");
 	});
+	
 });
+
+function book() {
+	$("#heihei").innerHTML="Hello JavaScript!";
+	<?php echo("123");?>
+		
+}
 </script>
 </html>

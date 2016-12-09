@@ -1,5 +1,6 @@
-
+<h id = "heihei">
 讲座预约
+</h>
 <?php 
 session_start();
 //date('Y-m-d H:i:s',time());
@@ -17,7 +18,8 @@ $sqlstr = "select * from yq_chair where chBookTime >  '$nowTime'  order by id de
 $result = mysql_query($sqlstr) or die("数据库请求失败！");
 while ($rows = mysql_fetch_array($result)) {
 
-	echo "<div class='chair-wrapper'>".$rows['id']."    ".$rows['chName']."</br>"." <input class='book-btn' type='submit' value='预约此讲座' onclick='jcud()'>"."</div>";
+	echo "<div class='chair-wrapper'>".$rows['id']."    ".$rows['chName']."</br>"." <input class='book-btn' type='button' id='book_chair_btn' value='预约此讲座' onclick='book()'/>"."</div>";
+	
 }
 ?>
 
