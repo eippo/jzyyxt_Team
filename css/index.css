@@ -116,12 +116,19 @@ a:hover::after { content: "\5D"; right:  -20px; }
     font-size: 0.75em;
     color: #333;
     line-height: 1.5em;
+    position: relative;
+    top:0;
 }
 
 .jzyyxt-toolbar-skin-blue{
 	height: 40px;
     background: linear-gradient(to bottom, #5ba2db 0%, #4bbfe9 100%, #5ba2db 100%);
     border-bottom: none;
+   
+    position: fixed;
+    z-index: 9999;
+    top: 0px;
+    margin-top: 0;
 }
 
 .jzyyxt-toolbar .container {
@@ -179,7 +186,7 @@ a:hover::after { content: "\5D"; right:  -20px; }
 
 .categ {
     background: #fff;
-    margin-top: 10px;
+    margin-top: 50px;
     box-shadow:0px 0px 8px #808080;
     
    
@@ -270,10 +277,10 @@ a:-webkit-any-link {
 .main-home {
 	height: 1000px;
 	background: #fff;
-    margin-top: 10px;
+    margin-top: 50px;
     font-size:25;
     text-align: center;
-    padding-top:10px;
+    padding-top:10px
 }
 
 /*----------------------------------book_chair.php------------------------------------------*/
@@ -286,3 +293,31 @@ a:-webkit-any-link {
 	
 }
 
+
+.chair-wrapper .book-btn {
+	clear: both;
+	width: 100px;
+	background-color: rgba(1,1,1,0);
+	color: #FFF;
+	height: 46px;
+	padding: 6px 6px;
+	font-size: 16px;
+	text-align:center;
+	line-height: 26px;
+	font-weight: normal;
+	cursor: pointer;
+	border: solid;
+	margin: 50px 0px 20px 0px;
+	border-radius: 5px;
+   
+}
+
+
+.chair-wrapper .book-btn:hover {
+	color: white;
+	background: #004ba0;
+	height: 46px;
+	padding: 6px 12px;
+	font-size: 16px;
+	line-height: 26px;
+}
