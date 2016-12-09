@@ -20,7 +20,7 @@
 				onblur="if(this.value=='') this.value='密码'" placeholder="密码"
 				data-errortxt="请输入密码" class="text-input" name="password"
 				id="password" />
-		    <input class="login-btn" type="submit" value="登录" onclick="jcud()">
+		    <input class="login-btn" type="submit" value="登录" onclick="jcud()"/>
 
 			<input name="btn_reg" type="button" class="register-btn" id="btn_reg"
 				value="注册" onclick="location.href='register.php'" />

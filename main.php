@@ -29,32 +29,58 @@
 				</div>
 				<div class="blog_category">
 					<ul class="category_list">
-						<li><a  type="button" id="c_send" onclick="click()">查询讲座</a><a
-							href="/web/column.html" target="_blank">预约讲座</a></li>
-						<li><a href="/mobile/column.html" target="_blank">论文上传</a><a
-							href="/web/column.html" target="_blank">我的论文</a></li>
-						<li><a href="/mobile/column.html" target="_blank">论文搜索</a><a
-							href="/web/column.html" target="_blank">操作手册</a></li>
-						<li><a href="/mobile/column.html" target="_blank">修改密码</a><a
-							href="/web/column.html" target="_blank">退出系统</a></li>
+						<li><a href="#0" data-type="modal-trigger" id="search_chair">查询讲座</a><a href="#1" data-type="modal-trigger" id="book_chair">预约讲座</a></li>
+						<li><a href="#0" data-type="modal-trigger" id="upload_paper">论文上传</a><a href="#1" data-type="modal-trigger" id="my_paper">我的论文</a></li>
+						<li><a href="#0" data-type="modal-trigger" id="search_paper">论文搜索</a><a href="#1" data-type="modal-trigger" id="operation_guide">操作手册</a></li>
+						<li><a href="#0" data-type="modal-trigger" id="change_password">修改密码</a><a href="#1" data-type="modal-trigger" id="exit">退出系统</a></li>
 					</ul>
 				</div>
 			</div>
 		</div>
 
 		<div class="content_r fr">
-			<div name="right-content" class="main-home">请在左侧菜单选择具体操作</div>
+			<div id="right-content" class="main-home">请在左侧菜单选择具体操作</div>
 		
 		</div>
 	</div>
 </body>
 <script type="text/javascript">
 $(document).ready(function() {
-	alert("hello world!");
+	
 });
 
-function click() {
+$(function(){
+	$("#search_chair").click(function(){
+		$("#right-content").load("search_chair.php");
+	});
+	$("#book_chair").click(function(){
+		$("#right-content").load("book_chair.php");
+	});
+	$("#upload_paper").click(function(){
+		$("#right-content").load("search_chair.php");
+	});
+	$("#my_paper").click(function(){
+		$("#right-content").load("search_chair.php");
+	});
+	$("#search_paper").click(function(){
+		$("#right-content").load("search_chair.php");
+	});
+	$("#operation_guide").click(function(){
+		$("#right-content").load("search_chair.php");
+	});
+	$("#change_password").click(function(){
+		$("#right-content").load("search_chair.php");
+	});
+	$("#exit").click(function(){
+		$("#right-content").load("search_chair.php");
+	});
 	
+});
+
+function book() {
+	$("#heihei").innerHTML="Hello JavaScript!";
+	<?php echo("123");?>
+		
 }
 </script>
 </html>
